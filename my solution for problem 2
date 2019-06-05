@@ -1,0 +1,10 @@
+T_buildings=int(input())
+for each_building in range(T_buildings):
+    no_of_rooms=int(input())
+    count=0
+    for each_room in range(no_of_rooms):
+        no_of_working=list(map(int, input().split()))
+        x=no_of_working.count(1)
+        if(x>2):
+            count=count+1
+    print(count)
